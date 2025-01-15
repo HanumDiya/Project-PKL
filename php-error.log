@@ -1,0 +1,64 @@
+[15-Nov-2024 15:57:00 Europe/Berlin] SQL Error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'status' in 'field list'
+[15-Nov-2024 16:00:10 Europe/Berlin] SQL Error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'status' in 'field list'
+[15-Nov-2024 16:08:16 Europe/Berlin] SQL Error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'status' in 'field list'
+[15-Nov-2024 16:08:17 Europe/Berlin] SQL Error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'status' in 'field list'
+[15-Nov-2024 16:08:18 Europe/Berlin] SQL Error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'status' in 'field list'
+[15-Nov-2024 16:08:18 Europe/Berlin] SQL Error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'status' in 'field list'
+[15-Nov-2024 16:09:04 Europe/Berlin] SQL Error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'status' in 'field list'
+[16-Nov-2024 13:40:09 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`isp`.`users`, CONSTRAINT `fk_users_role` FOREIGN KEY (`role_id`) REFERENCES `role` (`id`) ON DELETE CASCADE ON UPDATE CASCADE) in C:\xampp\htdocs\SATRIANET-WEB\register.php:48
+Stack trace:
+#0 C:\xampp\htdocs\SATRIANET-WEB\register.php(48): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\SATRIANET-WEB\register.php on line 48
+[16-Nov-2024 13:40:11 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`isp`.`users`, CONSTRAINT `fk_users_role` FOREIGN KEY (`role_id`) REFERENCES `role` (`id`) ON DELETE CASCADE ON UPDATE CASCADE) in C:\xampp\htdocs\SATRIANET-WEB\register.php:48
+Stack trace:
+#0 C:\xampp\htdocs\SATRIANET-WEB\register.php(48): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\SATRIANET-WEB\register.php on line 48
+[16-Nov-2024 13:40:24 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`isp`.`users`, CONSTRAINT `fk_users_role` FOREIGN KEY (`role_id`) REFERENCES `role` (`id`) ON DELETE CASCADE ON UPDATE CASCADE) in C:\xampp\htdocs\SATRIANET-WEB\register.php:48
+Stack trace:
+#0 C:\xampp\htdocs\SATRIANET-WEB\register.php(48): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\SATRIANET-WEB\register.php on line 48
+[20-Nov-2024 04:33:40 Europe/Berlin] PHP Warning:  Undefined variable $inventoryItems in C:\xampp\htdocs\SATRIANET-WEB\inventori.php on line 322
+[20-Nov-2024 04:33:40 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\SATRIANET-WEB\inventori.php on line 322
+[20-Nov-2024 04:34:18 Europe/Berlin] PHP Warning:  Undefined variable $inventoryItems in C:\xampp\htdocs\SATRIANET-WEB\inventori.php on line 322
+[20-Nov-2024 04:34:18 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\SATRIANET-WEB\inventori.php on line 322
+[20-Nov-2024 04:35:13 Europe/Berlin] PHP Warning:  Undefined variable $inventoryItems in C:\xampp\htdocs\SATRIANET-WEB\inventori.php on line 322
+[20-Nov-2024 04:35:13 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\SATRIANET-WEB\inventori.php on line 322
+[20-Nov-2024 04:36:06 Europe/Berlin] PHP Warning:  Undefined variable $inventoryItems in C:\xampp\htdocs\SATRIANET-WEB\inventori.php on line 322
+[20-Nov-2024 04:36:06 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\SATRIANET-WEB\inventori.php on line 322
+[20-Nov-2024 04:37:23 Europe/Berlin] PHP Warning:  Undefined variable $inventoryItems in C:\xampp\htdocs\SATRIANET-WEB\inventori.php on line 322
+[20-Nov-2024 04:37:23 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\SATRIANET-WEB\inventori.php on line 322
+[20-Nov-2024 04:38:21 Europe/Berlin] PHP Warning:  Undefined variable $inventoryItems in C:\xampp\htdocs\SATRIANET-WEB\inventori.php on line 347
+[20-Nov-2024 04:38:21 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\SATRIANET-WEB\inventori.php on line 347
+[20-Nov-2024 10:09:35 Europe/Berlin] SQL Error: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'status_detail' cannot be null
+[20-Nov-2024 10:18:59 Europe/Berlin] SQL Error: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'status_detail' cannot be null
+[20-Nov-2024 10:19:04 Europe/Berlin] SQL Error: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'status_detail' cannot be null
+[20-Nov-2024 10:40:38 Europe/Berlin] PHP Warning:  Undefined variable $inventoryId in C:\xampp\htdocs\SATRIANET-WEB\inventori.php on line 144
+[20-Nov-2024 10:40:43 Europe/Berlin] PHP Warning:  Undefined variable $inventoryId in C:\xampp\htdocs\SATRIANET-WEB\inventori.php on line 144
+[20-Nov-2024 12:33:28 Europe/Berlin] PHP Warning:  Undefined variable $inventoryId in C:\xampp\htdocs\SATRIANET-WEB\inventori.php on line 121
+[20-Nov-2024 12:33:28 Europe/Berlin] PHP Warning:  Undefined variable $inventoryItems in C:\xampp\htdocs\SATRIANET-WEB\inventori.php on line 344
+[20-Nov-2024 12:33:28 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\SATRIANET-WEB\inventori.php on line 344
+[20-Nov-2024 12:51:36 Europe/Berlin] PHP Warning:  Undefined variable $inventoryItems in C:\xampp\htdocs\SATRIANET-WEB\inventori.php on line 347
+[20-Nov-2024 13:44:33 Europe/Berlin] PHP Warning:  Undefined array key "status" in C:\xampp\htdocs\SATRIANET-WEB\inventori.php on line 121
+[21-Nov-2024 13:35:08 Europe/Berlin] PHP Warning:  Undefined variable $categories in C:\xampp\htdocs\SATRIANET-WEB\inventori.php on line 562
+[21-Nov-2024 13:35:08 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\SATRIANET-WEB\inventori.php on line 562
+[21-Nov-2024 13:35:08 Europe/Berlin] PHP Warning:  Undefined variable $brands in C:\xampp\htdocs\SATRIANET-WEB\inventori.php on line 573
+[21-Nov-2024 13:35:08 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\SATRIANET-WEB\inventori.php on line 573
+[21-Nov-2024 13:48:47 Europe/Berlin] PHP Warning:  Undefined variable $categories in C:\xampp\htdocs\SATRIANET-WEB\inventori.php on line 553
+[21-Nov-2024 13:48:47 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\SATRIANET-WEB\inventori.php on line 553
+[21-Nov-2024 13:48:47 Europe/Berlin] PHP Warning:  Undefined variable $brands in C:\xampp\htdocs\SATRIANET-WEB\inventori.php on line 562
+[21-Nov-2024 13:48:47 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\SATRIANET-WEB\inventori.php on line 562
+[21-Nov-2024 13:49:09 Europe/Berlin] PHP Warning:  Undefined variable $categories in C:\xampp\htdocs\SATRIANET-WEB\inventori.php on line 553
+[21-Nov-2024 13:49:09 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\SATRIANET-WEB\inventori.php on line 553
+[21-Nov-2024 13:49:09 Europe/Berlin] PHP Warning:  Undefined variable $brands in C:\xampp\htdocs\SATRIANET-WEB\inventori.php on line 562
+[21-Nov-2024 13:49:09 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\SATRIANET-WEB\inventori.php on line 562
+[21-Nov-2024 13:49:25 Europe/Berlin] PHP Warning:  Undefined variable $categories in C:\xampp\htdocs\SATRIANET-WEB\inventori.php on line 553
+[21-Nov-2024 13:49:25 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\SATRIANET-WEB\inventori.php on line 553
+[21-Nov-2024 13:49:25 Europe/Berlin] PHP Warning:  Undefined variable $brands in C:\xampp\htdocs\SATRIANET-WEB\inventori.php on line 562
+[21-Nov-2024 13:49:25 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\SATRIANET-WEB\inventori.php on line 562
+[21-Nov-2024 13:52:37 Europe/Berlin] PHP Warning:  Undefined variable $categories in C:\xampp\htdocs\SATRIANET-WEB\inventori.php on line 553
+[21-Nov-2024 13:52:37 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\SATRIANET-WEB\inventori.php on line 553
+[21-Nov-2024 13:52:37 Europe/Berlin] PHP Warning:  Undefined variable $brands in C:\xampp\htdocs\SATRIANET-WEB\inventori.php on line 562
+[21-Nov-2024 13:52:37 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\SATRIANET-WEB\inventori.php on line 562

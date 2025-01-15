@@ -1,0 +1,58 @@
+<?php
+require_once 'functions.php';
+check_login();
+
+$host = 'localhost';
+$db = 'triasat';
+$user = 'root';
+$pass = '';
+$charset = 'utf8mb4';
+
+$options = [
+    PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION,
+    PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
+    PDO::ATTR_EMULATE_PREPARES   => false,
+];
+
+$dsn = "mysql:host=$host;dbname=$db;charset=$charset";
+try {
+    $pdo = new PDO($dsn, $user, $pass, $options);
+} catch (\PDOException $e) {
+    echo json_encode(['status' => 'error', 'message' => 'Database connection failed: ' . $e->getMessage()]);
+    exit();
+}
+
+$action = $_GET['action'] ?? null;
+
+if ($action === 'add') {
+    if (isset($_POST['inventory_id'], $_POST['status'], $_POST['location'])) {
+        $inventory_id = $_POST['inventory_id'];
+        $status = $_POST['status'];
+        $location = $_POST['location'];
+
+        try {
+            $stmt = $pdo->prepare("INSERT INTO inventory_history (inventory_id, status, location) VALUES (?, ?, ?)");
+            $stmt->execute([$inventory_id, $status, $location]);
+            echo json_encode(['status' => 'success', 'message' => 'Data berhasil ditambahkan']);
+        } catch (\PDOException $e) {
+            echo json_encode(['status' => 'error', 'message' => 'Database error: ' . $e->getMessage()]);
+        }
+    } else {
+        echo json_encode(['status' => 'error', 'message' => 'Data tidak lengkap']);
+    }
+    exit();
+} elseif ($action === 'get') {
+    if (isset($_GET['id'])) {
+        $inventory_id = $_GET['id'];
+        $stmt = $pdo->prepare("SELECT status, location, status_detail, created_at FROM inventory_history WHERE inventory_id = ? ORDER BY created_at DESC");
+        $stmt->execute([$inventory_id]);
+        $history = $stmt->fetchAll();
+        echo json_encode($history);
+    } else {
+        echo json_encode([]);
+    }
+    exit();
+} else {
+    echo json_encode(['status' => 'error', 'message' => 'Tindakan tidak valid']);
+}
+?>
